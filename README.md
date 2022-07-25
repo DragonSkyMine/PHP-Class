@@ -25,3 +25,13 @@ $deluge->addTorrent($urlTorrent);
 ```php
 $deluge->close();
 ```
+
+## Deluge Class
+
+**To change**
+
+- Do not forget to change the lang you want the api to be call with (line 9)
+
+**Usage**
+
+TODO
