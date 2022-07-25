@@ -26,7 +26,7 @@ $deluge->addTorrent($urlTorrent);
 $deluge->close();
 ```
 
-## Deluge Class
+## Tmdb Class
 
 **To change**
 
