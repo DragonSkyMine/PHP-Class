@@ -80,3 +80,27 @@ $nyaa = new NYAA();
 ```php
 $result = $nyaa->getListSearch($request);
 ```
+
+## Ffprobe Class ##
+### [ffprobe.class.php](https://github.com/DragonSkyMine/PHP-Class/blob/main/ffprobe.class.php) ###
+
+**Important**
+
+ You need to be able to execute 'exec()' command in PHP and to have ffprobe installed on your server
+
+**Usage**
+
+- initialize an object
+```php
+$ffprobe = new FFPROBE();
+```
+
+- Get a raw scan of a media file
+```php
+$ffprobe->rawScanFile($pathfile);
+```
+
+- Get a cleaned scan of a media file
+```php
+$ffprobe->scanFile($pathfile);
+```
