@@ -1,7 +1,8 @@
 # PHP-Class
 Some class in php that I use on some project
 
-## Deluge Class
+## Deluge Class ##
+### [deluge.class.php](https://github.com/DragonSkyMine/PHP-Class/blob/main/deluge.class.php) ###
 
 **To change**
 
@@ -26,7 +27,8 @@ $deluge->addTorrent($urlTorrent);
 $deluge->close();
 ```
 
-## Tmdb Class
+## Tmdb Class ##
+### [tmdb.class.php](https://github.com/DragonSkyMine/PHP-Class/blob/main/tmdb.class.php) ###
 
 **To change**
 
@@ -34,4 +36,47 @@ $deluge->close();
 
 **Usage**
 
-TODO
+- Initialize an object (with your TMDB api key)
+```php
+$tmdb = new TMDB($apiKey);
+```
+
+- You can get all the infos about a movie with the id TMDB of the movie
+```php
+$infosMovie = $tmdb->fullInfosMovie($movie);
+```
+
+- You can get all the infos about a serie with the id TMDB of the series
+```php
+$infosSerie = $tmdb->fullInfosSerie($series);
+```
+
+## Free Class ##
+### [free.class.php](https://github.com/DragonSkyMine/PHP-Class/blob/main/free.class.php) ###
+
+**Usage**
+
+- Get your login mobile.free.fr and your api key and initialize an object
+```php
+$free = new FREE($freeUser, $freeApiKey);
+```
+
+- Send SMS to yourself
+```php
+$free->sendMessage("Hello world");
+```
+
+## Nyaa Class ##
+### [nyaa.class.php](https://github.com/DragonSkyMine/PHP-Class/blob/main/nyaa.class.php) ###
+
+**Usage**
+
+- initialize an object
+```php
+$nyaa = new NYAA();
+```
+
+- Get the result of a research
+```php
+$result = $nyaa->getListSearch($request);
+```
