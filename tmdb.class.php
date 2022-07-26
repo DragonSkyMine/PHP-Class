@@ -10,11 +10,11 @@ class TMDB
   const API_URL = "https://api.themoviedb.org/3/";
   const IMAGE_URL = "https://image.tmdb.org/t/p/original";
 
-  private $searchPath = 'search/tv?language='.$LANG.'&page=1&include_adult=false&api_key={$1}&query={$2}';
-  private $seriesPath = 'tv/{$2}?language='.$LANG.'&api_key={$1}';
-  private $seasonPath = 'tv/{$2}/season/{$3}?language='.$LANG.'&api_key={$1}';
+  private $searchPath = 'search/tv?language='.self::LANG.'&page=1&include_adult=false&api_key={$1}&query={$2}';
+  private $seriesPath = 'tv/{$2}?language='.self::LANG.'&api_key={$1}';
+  private $seasonPath = 'tv/{$2}/season/{$3}?language='.self::LANG.'&api_key={$1}';
 
-  private $moviesPath = 'movie/{$2}?language='.$LANG.'&api_key={$1}';
+  private $moviesPath = 'movie/{$2}?language='.self::LANG.'&api_key={$1}';
 
   private $apiKey;
 
